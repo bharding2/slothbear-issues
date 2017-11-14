@@ -9,7 +9,9 @@
   </head>
   <body ng-app="slothbearIssues">
     <main ng-controller="SlothbearIssuesController as sbIssues">
-      {{ sbIssues.stuff }}
+      <article ng-repeat="issue in sbIssues.issues">
+        {{ issue.title }}
+      </article>
     </main>
   </body>
 </html>
