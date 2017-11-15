@@ -10,8 +10,8 @@
   <body ng-app="slothbearIssues">
     <h1>Slothbear Issues</h1>
     <main ng-controller="SlothbearIssuesController as sbIssues">
-      <article ng-repeat="issue in sbIssues.issues">
-        <h2><a id="{{ issue.number }}"></a>{{ issue.title }}</h2>
+      <article ng-repeat="issue in sbIssues.issues" id="{{ issue.number }}">
+        <h2>{{ issue.title }}</h2>
         <p>Posted by {{ issue.user.login }} at {{ issue.created_at }}</p>
         <pre>{{ issue.body }}</pre>
       </article>
