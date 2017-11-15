@@ -13,7 +13,7 @@
       <article ng-repeat="issue in sbIssues.issues">
         <h2><a id="{{ issue.number }}"></a>{{ issue.title }}</h2>
         <p>Posted by {{ issue.user.login }} at {{ issue.created_at }}</p>
-        <section>{{ issue.body }}</section>
+        <pre>{{ issue.body }}</pre>
       </article>
     </main>
   </body>
