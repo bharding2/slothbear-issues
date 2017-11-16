@@ -8,7 +8,8 @@
     <script src="scripts/index.js"></script>
   </head>
   <body ng-app="slothbearIssues">
-    <h1>Slothbear Issues</h1>
+    <h1><img src="img/FCslothbear_small.png">Slothbear Issues</h1>
+    <h3>These bears have some issues</h3>
     <main ng-controller="SlothbearIssuesController as sbIssues">
       <article ng-repeat="issue in sbIssues.issues" id="{{ issue.number }}">
         <h2>{{ issue.title }}</h2>
