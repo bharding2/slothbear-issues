@@ -1,3 +1,32 @@
+body{
+  font-family: "Courier New", Courier, monospace;
+  background-color: #222222;
+  color: #EEEEEE;
+  margin: 0;
+}
+
+h1 {
+  background-color: #16167b;
+  text-align: right;
+  text-shadow: 2px 2px 5px #f2c812;
+  padding: 5%;
+}
+
+img {
+  float: left;
+  margin: -7% 0 7% 0;
+}
+
+h2, h3 {
+  text-align: center;
+}
+
+main {
+  clear: both;
+  margin: 5%;
+}
+
 pre {
   white-space: pre-wrap;
+  font-size: 1.25em;
 }
