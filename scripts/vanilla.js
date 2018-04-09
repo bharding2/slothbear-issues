@@ -15,4 +15,21 @@ httpRequest.open('GET', 'https://api.github.com/repos/bharding2/slothbear-issues
 
 httpRequest.send();
 
+function createIssue(issue, parentEl) {
+  var articleEl = document.createElement('article');
+  articleEl.id = issue.number;
 
+  var titleEl = document.createElement('h2');
+  titleEl.textContent = issue.title;
+  articleEl.appendChild(titleEl);
+
+  var bylineEl = document.createElement('p');
+  bylineEl.textConent = `Posted by ${issue.user.login} at ${issue.created_at}`;
+  articleEl.appendChild(bylineEl);
+
+  var bodyEl = document.createElement('pre');
+  bodyEl.innerHTML = issue.body;
+  articleEl.appendChild(bodyEl);
+
+  parentEl.appendChild(articleEl);
+};
