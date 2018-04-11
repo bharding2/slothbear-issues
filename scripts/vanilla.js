@@ -7,6 +7,8 @@ httpRequest.addEventListener('load', () => {
   issues.forEach((issue) => {
     createIssue(issue, mainEl);
   });
+
+  if (location.hash) document.getElementById(location.hash.replace('#', '')).scrollIntoView();
 });
 
 httpRequest.open('GET', 'https://api.github.com/repos/bharding2/slothbear-issues/issues');
